@@ -27,9 +27,13 @@ public class MainViewController {
     @FXML private Label accountBalance;
     @FXML private TextField amountTextField;
 
+    public static int SizeWidth = 300;
+    public static int SizeHeigth = 275;
+
+
     public void initialize(){
         //get model
-        account = new FinancialAccount("Maxwell Planck", 6626, 1000d);
+        account = new FinancialAccount("Nicola Martinez", 999999, 12000d);
 
         //link Model with View
         accountHolder.textProperty().bind(account.accountHolderProperty());

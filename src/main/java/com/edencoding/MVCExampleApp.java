@@ -1,5 +1,6 @@
 package com.edencoding;
 
+import com.edencoding.controllers.MainViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +15,7 @@ public class MVCExampleApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/mainView.fxml"));
         primaryStage.setTitle("MVC Example App");
         primaryStage.getIcons().add(new Image(getClass().getResource("/img/EdenCodingIcon.png").toExternalForm()));
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, MainViewController.SizeWidth, MainViewController.SizeHeigth));
         primaryStage.show();
     }
 
